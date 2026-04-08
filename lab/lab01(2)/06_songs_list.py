@@ -24,6 +24,8 @@ violator_songs_list = [
 # Лучше заранее вычислить необходимое, а затем в print(xxx, yyy, zzz)
 
 # TODO здесь ваш код
+distance_1 = round(violator_songs_list[3][1]+violator_songs_list[5][1]+violator_songs_list[8][1],2)
+print(f'Три песни звучат {distance_1} минут')
 
 # Есть словарь песен группы Depeche Mode
 violator_songs_dict = {
@@ -42,3 +44,5 @@ violator_songs_dict = {
 #   А другие три песни звучат ХХХ минут
 
 # TODO здесь ваш код
+distance_2 = round(violator_songs_dict['Sweetest Perfection']+violator_songs_dict['Policy of Truth']+violator_songs_dict['Blue Dress'])
+print(f'А другие три песни звучат {distance_2} минут')

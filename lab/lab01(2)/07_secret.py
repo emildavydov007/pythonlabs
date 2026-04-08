@@ -33,3 +33,5 @@ secret_message = [
 #   Если нужны вычисления и разные пробы - делайте это в консоли пайтона, тут нужен только результат
 
 # TODO вывести расшифрованное сообщение
+word = f'{secret_message[0][3]} {secret_message[1][9:13]} {secret_message[2][5:14:2]} {secret_message[3][12:6:-1]} {secret_message[4][20:15:-1]}'
+print(word)
