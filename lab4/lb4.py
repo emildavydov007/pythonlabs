@@ -52,9 +52,6 @@ dog_api = create_api_function("https://dogapi.dog/api/v2/facts")
 dog_api = rate_limiter(3)(dog_api)
 
 
-
-
-
 if __name__ == "__main__":
     print("Первый вызов:")
     print(dog_api())
