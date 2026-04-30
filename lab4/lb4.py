@@ -59,11 +59,7 @@ if __name__ == "__main__":
     print("Первый вызов:")
     print(dog_api())
 
-    print("\nВторой вызов (сразу):")
-    print(dog_api())
-
-    print("\nЖдём 3 секунды...")
     time.sleep(3)
 
-    print("\nТретий вызов:")
+    print("\nВторой вызов:")
     print(dog_api())
