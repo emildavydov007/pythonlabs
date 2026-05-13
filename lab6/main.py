@@ -3,7 +3,6 @@ from calc_package.area import calc_area
 from calc_package.heat import calc_heat
 from calc_package.models import get_multiplier
 from export.to_doc import save_to_doc
-#from export.to_xls import save_to_xls
 
 def calculate():
     length = float(entry_length.get())
@@ -21,8 +20,6 @@ def calculate():
 def save_doc():
     save_to_doc(last_area, last_heat)
 
-#def save_xls():
-    # save_to_xls(last_area, last_heat)
 
 root = tk.Tk()
 root.title("Расчёт помещения")
@@ -44,6 +41,5 @@ result_label = tk.Label(root, text="")
 result_label.pack()
 
 tk.Button(root, text="Сохранить в DOC", command=save_doc).pack()
-#tk.Button(root, text="Сохранить в XLS", command=save_xls).pack()
 
 root.mainloop()
