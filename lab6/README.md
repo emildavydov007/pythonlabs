@@ -41,6 +41,9 @@ S — площадь помещения
 
 <img width="153" height="279" alt="image" src="https://github.com/user-attachments/assets/4a963c95-fd87-443e-baf9-0e5a2b234db9" />
 
+<img width="894" height="326" alt="image" src="https://github.com/user-attachments/assets/4941feab-5ca3-4421-ad10-886d8b478295" />
+
+
 ## Ссылки на используемые материалы
 1. [Основы работы с Tkinter в Python ](https://skyeng.ru/it-industry/programming/osnovy-raboty-s-tkinter-v-python-dlya-nachinayushchih/)
 2. [Python модули и пакеты / Хабр](https://habr.com/ru/articles/718828/)
