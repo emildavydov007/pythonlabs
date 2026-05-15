@@ -1,6 +1,6 @@
 import sys
 
-from PyQt5.QtWidgets import (
+from PySide6.QtWidgets import (
     QApplication,
     QWidget,
     QLabel,
@@ -95,4 +95,4 @@ app = QApplication(sys.argv)
 window = Window()
 window.show()
 
-sys.exit(app.exec_())
+sys.exit(app.exec())
