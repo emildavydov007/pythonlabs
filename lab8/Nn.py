@@ -181,5 +181,10 @@ def add_text(self, top_text="", bottom_text=""):
             stroke_fill="black"
         )
 
-    return image
+    return    if top:
+            draw.text(((w - len(top)*20)//2, 20), top, fill="white", font=font)
+        if bottom:
+            draw.text(((w - len(bottom)*20)//2, h-60), bottom, fill="white", font=font)
+        
+        s
 
