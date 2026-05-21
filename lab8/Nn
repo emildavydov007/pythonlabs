@@ -1,0 +1,35 @@
+if top_text:
+
+            self.draw_centered_text(
+
+                draw,
+
+                top_text,
+
+                font,
+
+                width,
+
+                20
+
+            )
+
+        # Нижний текст
+
+        if bottom_text:
+
+            self.draw_centered_text(
+
+                draw,
+
+                bottom_text,
+
+                font,
+
+                width,
+
+                height - 80
+
+            )
+
+        return i
