@@ -116,3 +116,70 @@ class MemeGenerator:
             )
 
         return image
+
+def add_text(self, top_text="", bottom_text=""):
+
+    image = self.image.copy()
+
+    draw = ImageDraw.Draw(image)
+
+    width, height = image.size
+
+    try:
+        # Увеличенный размер шрифта
+        font_size = width // 8
+
+        font = ImageFont.truetype(
+            "arial.ttf",
+            font_size
+        )
+
+    except:
+        font = ImageFont.load_default()
+
+    # Верхний текст
+    if top_text:
+
+        bbox = draw.textbbox(
+            (0, 0),
+            top_text,
+            font=font
+        )
+
+        text_width = bbox[2] - bbox[0]
+
+        x = (width - text_width) // 2
+
+        draw.text(
+            (x, 30),
+            top_text.upper(),
+            fill="white",
+            font=font,
+            stroke_width=5,
+            stroke_fill="black"
+        )
+
+    # Нижний текст
+    if bottom_text:
+
+        bbox = draw.textbbox(
+            (0, 0),
+            bottom_text,
+            font=font
+        )
+
+        text_width = bbox[2] - bbox[0]
+
+        x = (width - text_width) // 2
+
+        draw.text(
+            (x, height - font_size - 40),
+            bottom_text.upper(),
+            fill="white",
+            font=font,
+            stroke_width=5,
+            stroke_fill="black"
+        )
+
+    return image
+
